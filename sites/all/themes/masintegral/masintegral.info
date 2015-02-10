@@ -1,0 +1,31 @@
+name = Mas integral
+description = A theme with Mas Integral design
+core = 7.x
+version = 1.0
+
+stylesheets[all][] = css/layout.css
+stylesheets[all][] = css/style.css
+stylesheets[print][] = css/print.css
+
+regions[header] = Header
+regions[highlighted] = Highlighted
+regions[featured] = Featured
+regions[help] = Help
+regions[content] = Content
+regions[sidebar_first] = Left sidebar
+regions[sidebar_second] = Right sidebar
+regions[footer] = Footer
+
+features[] = logo
+features[] = name
+features[] = slogan
+features[] = node_user_picture
+features[] = comment_user_picture
+features[] = comment_user_verification
+features[] = favicon
+features[] = main_menu
+features[] = secondary_menu
+
+scripts[] = js/jquery.fullbg-min.js
+scripts[] = js/masintegral.js
+
