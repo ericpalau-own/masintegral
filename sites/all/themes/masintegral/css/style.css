@@ -61,6 +61,9 @@ body{
     text-decoration: none;
     color: #ffffff;
 }
+.page-tnid-0 #main-menu-links a:hover,
+.page-tnid-0 #main-menu-links a:focus,
+.page-tnid-0 #main-menu-links a.active,
 .page-tnid-1 #main-menu-links a:hover,
 .page-tnid-1 #main-menu-links a:focus,
 .page-tnid-1 #main-menu-links a.active{
@@ -105,10 +108,38 @@ body{
 }
 
 /* --------------- Main wrapper ------------ */
+h1.title{
+    padding: 0px 10px;
+}
+.node-page .content{
+    display: block;
+    overflow: hidden;
+}
+.node-page .field-name-body{
+    padding: 0px 10px;
+}
+.node-page .field-type-image{
+    padding: 10px 5px;
+    background: #ffffff;
+    display: block;
+    overflow: hidden;
+}
+.node-page .field-type-image .field-item{
+    float: left;
+    padding: 0px 5px;
+}
+.node-page .links.inline{
+    clear: both;
+    display: inline-block;
+    padding: 0px 10px;
+    margin: 0;
+}
 #main-wrapper {
     position: relative;
 }
-.page-tnid-1 #content {
+#content,
+.page-tnid-0 #content,
+.page-tnid-1 #content{
     background-image: url("../images/top_proyecto_1.png");
     background-position: 0 0;
     background-repeat: no-repeat;
@@ -117,13 +148,15 @@ body{
     top: -10px;
     width: 348px;
 }
+#content .section,
+.page-tnid-0 #content .section,
 .page-tnid-1 #content .section{
     background-color: #ee1997;
     color: #ffffff;
     margin-left: 11px;
     margin-top: 10px;
     opacity: 0.9;
-    padding: 10px;
+    padding: 5px 0px;
 }
 
 .page-tnid-4 #content {
@@ -141,5 +174,51 @@ body{
     margin-left: 11px;
     margin-top: 10px;
     opacity: 0.9;
+    padding: 5px 0px;
+}
+/*
+.node-full-tnid-4{
+    display: none;
+}
+*/
+#sidebar-second {
+    background-image: url("../images/top_masia_2.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    left: 459px;
+    position: absolute;
+    top: -10px;
+    width: 348px;
+}
+#sidebar-second .section {
+    background-color: #a5a87b;
+    color: #000000;
+    margin-left: 11px;
+    margin-top: 10px;
+    opacity: 0.9;
     padding: 10px;
+    display: block;
+    overflow: hidden;
+}
+#sidebar-second .section .item-list{
+    float: right;
+}
+.quicktabs_main.quicktabs-style-navlist{
+    background: none;
+    border: none;
+    width: 60%;
+}
+ul.quicktabs-tabs.quicktabs-style-navlist li.active{
+    background: none;
+    border: none;
+}
+.widgets-element-horizontal{
+    margin-right: 5px;
+}
+.widgets-style-horizontal{
+    margin-bottom: 5px;
+}
+
+#user-login input.form-text{
+    width: 75%;
 }
