@@ -23,7 +23,7 @@ function masintegral_process_page(&$variables) {
         $variables['bg_url'] = $variables['base_path'].$variables['directory'].'/images/bg_1.jpg';
     }
     $variables['tabs_enabled'] = false;
-    //var_dump($variables['bg_url']);die();
+    //var_dump($variables);die();
 }
 
 /**
@@ -34,4 +34,5 @@ function masintegral_preprocess_node(&$variables) {
     if ($variables['view_mode'] == 'full' && isset($variables['node']->tnid)) {
         $variables['classes_array'][] = 'node-full-tnid-'.$variables['node']->tnid;
     }
+
 }

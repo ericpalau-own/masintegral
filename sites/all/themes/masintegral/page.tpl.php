@@ -105,25 +105,9 @@
                     </div> <!-- /#main-menu -->
                 <?php endif; ?>
 
-                <?php if ($secondary_menu): ?>
-                    <div id="secondary-menu" class="navigation">
-                        <?php print theme('links__system_secondary_menu', array(
-                            'links' => $secondary_menu,
-                            'attributes' => array(
-                                'id' => 'secondary-menu-links',
-                                'class' => array('links', 'inline', 'clearfix'),
-                            ),
-                            'heading' => array(
-                                'text' => t('Secondary menu'),
-                                'level' => 'h2',
-                                'class' => array('element-invisible'),
-                            ),
-                        )); ?>
-                    </div> <!-- /#secondary-menu -->
-                <?php endif; ?>
+                <?php print render($page['header']); ?>
             </div>
 
-            <?php print render($page['header']); ?>
             <?php if ($page['featured']): ?>
                 <div id="featured"><div class="section clearfix">
                         <?php print render($page['featured']); ?>
@@ -140,11 +124,26 @@
         <?php endif; ?>
 
         <div id="main-wrapper" class="clearfix"><div id="main" class="clearfix">
-
+                <?php if ($secondary_menu): ?>
+                    <div id="secondary-menu" class="navigation">
+                        <?php print theme('links__system_secondary_menu', array(
+                            'links' => $secondary_menu,
+                            'attributes' => array(
+                                'id' => 'secondary-menu-links',
+                                'class' => array('links', 'inline', 'clearfix'),
+                            ),
+                            'heading' => array(
+                                'text' => t('Secondary menu'),
+                                'level' => 'h2',
+                                'class' => array('element-invisible'),
+                            ),
+                        )); ?>
+                    </div> <!-- /#secondary-menu -->
+                <?php endif; ?>
                 <?php if ($page['sidebar_first']): ?>
                     <div id="sidebar-first" class="column sidebar"><div class="section">
-                            <?php print render($page['sidebar_first']); ?>
-                        </div></div> <!-- /.section, /#sidebar-first -->
+                        <?php print render($page['sidebar_first']); ?>
+                    </div></div> <!-- /.section, /#sidebar-first -->
                 <?php endif; ?>
 
                 <div id="content" class="column"><div class="section">

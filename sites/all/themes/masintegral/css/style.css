@@ -29,8 +29,8 @@ body{
 /* --------------- Main Menu ------------ */
 #menu-wrapper {
     border-bottom: 1px solid #bfbfbf;
-    height: 40px;
-    line-height: 40px;
+    height: 39px;
+    line-height: 38px;
     display: block;
     overflow: hidden;
 }
@@ -61,9 +61,12 @@ body{
     text-decoration: none;
     color: #ffffff;
 }
-.page-tnid-0 #main-menu-links a:hover,
-.page-tnid-0 #main-menu-links a:focus,
-.page-tnid-0 #main-menu-links a.active,
+
+#main-menu-links a:hover,
+#main-menu-links a:focus,
+#main-menu-links a.active{
+    background: #bbbbbb;
+}
 .page-tnid-1 #main-menu-links a:hover,
 .page-tnid-1 #main-menu-links a:focus,
 .page-tnid-1 #main-menu-links a.active{
@@ -74,12 +77,24 @@ body{
 .page-tnid-4 #main-menu-links a.active{
     background: url("../images/color_menu02.png") repeat-x left bottom #ee1997;
 }
+.page-tnid-20 #main-menu-links a:hover,
+.page-tnid-20 #main-menu-links a:focus,
+.page-tnid-20 #main-menu-links a.active{
+    background: url("../images/color_menu03.png") repeat-x left bottom #ee1997;
+}
+.page-tnid-21 #main-menu-links a:hover,
+.page-tnid-21 #main-menu-links a:focus,
+.page-tnid-21 #main-menu-links a.active{
+    background: url("../images/color_menu04.png") repeat-x left bottom #ee1997;
+}
+.page-tnid-22 #main-menu-links a:hover,
+.page-tnid-22 #main-menu-links a:focus,
+.page-tnid-22 #main-menu-links a.active{
+    background: url("../images/color_menu05.png") repeat-x left bottom #ee1997;
+}
 
 
 /* --------------- Secondary Menu ------------ */
-#secondary-menu {
-    float: right;
-}
 #secondary-menu-links {
     margin: 0;
     padding: 0;
@@ -87,16 +102,13 @@ body{
     overflow: hidden;
 }
 #secondary-menu-links li {
-    float: left;
     list-style: none;
-    padding: 0 15px 0 0;
     margin: 0px;
     display: block;
     overflow: hidden;
 }
 #secondary-menu-links a {
     color: #000000;
-    float: left; /* LTR */
     text-decoration: none;
 }
 #secondary-menu-links a:hover,
@@ -107,110 +119,142 @@ body{
     color: #ffffff;
 }
 
+/* --------------- Header ------------ */
+.region-header{
+    float: right;
+    line-height: 25px;
+}
+#block-locale-language ul li{
+    float: left;
+    list-style: none;
+    padding: 0 15px 0 0;
+    display: block;
+    overflow: hidden;
+}
+#block-locale-language ul li.active{
+    font-weight: bold;
+}
+#block-locale-language ul li a{
+    text-decoration: none;
+}
 /* --------------- Main wrapper ------------ */
 h1.title{
     padding: 0px 10px;
+    font-family: Georgia, Verdana;
+    font-size: 18px;
+    font-weight: bold;
+}
+h2{
+    padding: 0px 10px;
+    font-family: Georgia, Verdana;
+    font-size: 16px;
+    font-weight: bold;
 }
 .node-page .content{
     display: block;
     overflow: hidden;
 }
-.node-page .field-name-body{
-    padding: 0px 10px;
-}
-.node-page .field-type-image{
-    padding: 10px 5px;
-    background: #ffffff;
-    display: block;
-    overflow: hidden;
-}
-.node-page .field-type-image .field-item{
-    float: left;
-    padding: 0px 5px;
-}
+
 .node-page .links.inline{
     clear: both;
     display: inline-block;
     padding: 0px 10px;
     margin: 0;
+    width: 100%;
 }
 #main-wrapper {
     position: relative;
 }
-#content,
-.page-tnid-0 #content,
-.page-tnid-1 #content{
-    background-image: url("../images/top_proyecto_1.png");
+#content{
     background-position: 0 0;
     background-repeat: no-repeat;
-    left: 260px;
     position: absolute;
+    left: 260px;
     top: -10px;
     width: 348px;
 }
-#content .section,
-.page-tnid-0 #content .section,
-.page-tnid-1 #content .section{
-    background-color: #ee1997;
+#content .section{
     color: #ffffff;
     margin-left: 11px;
     margin-top: 10px;
     opacity: 0.9;
-    padding: 5px 0px;
+    padding: 5px 10px;
+    background: #bbbbbb;
 }
-
+.page-tnid-1 #content{
+    background-image: url("../images/top_proyecto_1.png");
+}
+.page-tnid-1 #content .section{
+    background-color: #ee1997;
+}
 .page-tnid-4 #content {
     background-image: url("../images/top_masia_1.png");
-    background-position: 0 0;
-    background-repeat: no-repeat;
-    left: 75px;
-    position: absolute;
-    top: -10px;
     width: 348px;
 }
 .page-tnid-4 #content .section{
     background-color: #0fb69a;
     color: #000000;
-    margin-left: 11px;
-    margin-top: 10px;
-    opacity: 0.9;
-    padding: 5px 0px;
 }
-/*
-.node-full-tnid-4{
-    display: none;
+.page-tnid-20 h1 {
+    color: #f8a849;
 }
-*/
+.page-tnid-20 #content {
+    background-image: url("../images/top_sala_gran_1.png");
+}
+.page-tnid-20 #content .section{
+    background-color: #d2743e;
+    color: #000000;
+}
+.page-tnid-21 h1{
+    color: #b18eaf;
+}
+.page-tnid-21 #content {
+    background-image: url("../images/top_recessos_1.png");
+    width: 287px;
+}
+.page-tnid-21 #content .section{
+    background-color: #813689;
+}
+.page-tnid-22 #content {
+    background-image: url("../images/top_hort_1.png");
+    width: 361px;
+}
+.page-tnid-22 #content .section{
+    background-color: #5fa5d8;
+}
+#sidebar-first {
+    width: 200px;
+}
 #sidebar-second {
     background-image: url("../images/top_masia_2.png");
     background-position: 0 0;
     background-repeat: no-repeat;
-    left: 459px;
+    left: 632px;
     position: absolute;
     top: -10px;
-    width: 348px;
+    width: 477px;
 }
 #sidebar-second .section {
-    background-color: #a5a87b;
     color: #000000;
     margin-left: 11px;
     margin-top: 10px;
     opacity: 0.9;
-    padding: 10px;
+    padding: 0px;
     display: block;
     overflow: hidden;
 }
-#sidebar-second .section .item-list{
-    float: right;
-}
 .quicktabs_main.quicktabs-style-navlist{
-    background: none;
+    background: #a5a87b;
     border: none;
-    width: 60%;
+    width: 330px;
 }
 ul.quicktabs-tabs.quicktabs-style-navlist li.active{
     background: none;
     border: none;
+}
+ul.quicktabs-tabs.quicktabs-style-navlist li.active a{
+    background-position: -22px 0px;
+    text-decoration: none;
 }
 .widgets-element-horizontal{
     margin-right: 5px;
@@ -221,4 +265,65 @@ ul.quicktabs-tabs.quicktabs-style-navlist li.active{
 
 #user-login input.form-text{
     width: 75%;
+}
+
+.quicktabs-wrapper{
+    display: block;
+    overflow: hidden;
+    position: relative;
+}
+.quicktabs-wrapper .item-list{
+    position: absolute;
+    right: 83px;
+    display: block;
+    width: 50px;
+    overflow: hidden;
+    float: right;
+}
+.quicktabs-tabs li{
+    margin: 0px 0px 4px 0px;
+    padding: 0px;
+    background-image: none;
+}
+ul.quicktabs-tabs.quicktabs-style-navlist li a{
+    display: block;
+    overflow: hidden;
+    width: 11px;
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    text-decoration: none;
+    height: 70px;
+    color: #ff0000;
+    background-image: url(../images/pestanyes_huerto02.png);
+    text-indent: 4000px;
+}
+.jGrowl,
+#jGrowl .jGrowl-notification{
+    color: #000000;
+}
+.jGrowl-closer{
+    color: #ffffff !important;
+}
+.form-item{
+    padding: 10px 0px;
+    margin: 0;
+}
+.nl-wrapper-hidden{
+    display: none;
+}
+.newsletter-button {
+    color: #ffffff;
+    cursor: pointer;
+}
+#newsletter-error{
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+.quicktabs-tabpage .node-page ul.links{
+    display: none;
+}
+.field-type-image img{
+    float: left;
+    padding: 7px;
+    background: #ffffff;
 }
