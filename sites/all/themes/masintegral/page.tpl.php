@@ -172,6 +172,12 @@
 
                     </div></div> <!-- /.section, /#content -->
 
+                <?php if ($page['content_right']): ?>
+                    <div id="content-right" class="column"><div class="section">
+                            <?php print render($page['content_right']); ?>
+                        </div></div> <!-- /.section, /#content-right -->
+                <?php endif; ?>
+
                 <?php if ($page['sidebar_second']): ?>
                     <div id="sidebar-second" class="column sidebar"><div class="section">
                             <?php print render($page['sidebar_second']); ?>

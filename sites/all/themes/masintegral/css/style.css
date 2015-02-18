@@ -19,6 +19,9 @@ body{
     position: fixed;
     top: 0;
 }
+.item-list ul{
+    list-style: none;
+}
 
 /* --------------- Logo ------------ */
 #logo{
@@ -49,6 +52,9 @@ body{
     display: block;
     overflow: hidden;
 }
+#block-locale-language a{
+    color: #000000;
+}
 #main-menu-links a {
     color: #6e6e70;
     float: left; /* LTR */
@@ -64,9 +70,7 @@ body{
 
 #main-menu-links a:hover,
 #main-menu-links a:focus,
-#main-menu-links a.active{
-    background: #bbbbbb;
-}
+#main-menu-links a.active,
 .page-tnid-1 #main-menu-links a:hover,
 .page-tnid-1 #main-menu-links a:focus,
 .page-tnid-1 #main-menu-links a.active{
@@ -85,12 +89,16 @@ body{
 .page-tnid-21 #main-menu-links a:hover,
 .page-tnid-21 #main-menu-links a:focus,
 .page-tnid-21 #main-menu-links a.active{
-    background: url("../images/color_menu04.png") repeat-x left bottom #ee1997;
+    background: url("../images/color_menu05.png") repeat-x left bottom #ee1997;
 }
 .page-tnid-22 #main-menu-links a:hover,
 .page-tnid-22 #main-menu-links a:focus,
 .page-tnid-22 #main-menu-links a.active{
-    background: url("../images/color_menu05.png") repeat-x left bottom #ee1997;
+}
+.page-tnid-23 #main-menu-links a:hover,
+.page-tnid-23 #main-menu-links a:focus,
+.page-tnid-23 #main-menu-links a.active{
+    background: url("../images/color_menu04.png") repeat-x left bottom #ee1997;
 }
 
 
@@ -139,16 +147,41 @@ body{
 }
 /* --------------- Main wrapper ------------ */
 h1.title{
-    padding: 0px 10px;
+    padding: 0px;
     font-family: Georgia, Verdana;
     font-size: 18px;
     font-weight: bold;
+    margin: 10px 0 0 0;
 }
 h2{
-    padding: 0px 10px;
+    padding: 0px;
     font-family: Georgia, Verdana;
     font-size: 16px;
     font-weight: bold;
+    margin: 10px 0 0 0;
+
+}
+a,
+a:visited,
+a:active{
+    color: #ffffff;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+.field-type-image {
+    display: block;
+    overflow: hidden;
+}
+.field-type-image img{
+    float: left;
+    padding: 7px;
+    background: #ffffff;
+}
+.form-item{
+    padding: 5px 0px;
+    margin: 0 !important;
 }
 .node-page .content{
     display: block;
@@ -181,6 +214,26 @@ h2{
     padding: 5px 10px;
     background: #bbbbbb;
 }
+#content-right {
+    background-image: url("../images/top_masia_2.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    left: 632px;
+    position: absolute;
+    top: -10px;
+    width: 477px;
+}
+#content-right .section {
+    color: #000000;
+    margin-left: 11px;
+    margin-top: 10px;
+    opacity: 0.9;
+    padding: 10px;
+    display: block;
+    overflow: hidden;
+}
+
+/* --------------- Specific content section ------------ */
 .page-tnid-1 #content{
     background-image: url("../images/top_proyecto_1.png");
 }
@@ -195,6 +248,18 @@ h2{
     background-color: #0fb69a;
     color: #000000;
 }
+.page-tnid-4 #content-right {
+    background-image: url("../images/top_masia_2.png");
+}
+.page-tnid-4 #content-right .section {
+    color: #000000;
+}
+.page-tnid-13 #content {
+    width: 477px;
+}
+.page-tnid-13 #content .section{
+    color: #000000;
+}
 .page-tnid-20 h1 {
     color: #f8a849;
 }
@@ -205,68 +270,111 @@ h2{
     background-color: #d2743e;
     color: #000000;
 }
-.page-tnid-21 h1{
-    color: #b18eaf;
-}
 .page-tnid-21 #content {
     background-image: url("../images/top_recessos_1.png");
-    width: 287px;
-}
-.page-tnid-21 #content .section{
-    background-color: #813689;
-}
-.page-tnid-22 #content {
-    background-image: url("../images/top_hort_1.png");
     width: 361px;
 }
-.page-tnid-22 #content .section{
+.page-tnid-21 #content .section{
     background-color: #5fa5d8;
+}
+.page-tnid-22 #content {
+}
+.page-tnid-22 #content .section{
+}
+.page-tnid-23 h1{
+    color: #b18eaf;
+}
+.page-tnid-23 #content {
+    background-image: url("../images/top_alimentacio_1.png");
+    width: 287px;
+}
+.page-tnid-23 #content .section{
+    background-color: #813689;
+    margin-left: 10px;
+}
+.page-tnid-29 h1{
+    color: #226168;
+}
+.page-tnid-29 #content {
+    background-image: url("../images/top_contacto_2.png");
+    width: 330px;
+}
+.page-tnid-29 #content .section{
+    background-color: #fefbda;
+    color:#000000;
+}
+.page-tnid-29 #content .section a{
+    color:#000000;
+}
+.page-tnid-29 #content-right h2{
+    color: #eeefd0;
+}
+.page-tnid-29 #content-right {
+    background-image: url("../images/top_contacto_1.png");
+    width: 191px;
+}
+.page-tnid-29 #content-right .section {
+    color: #ffffff;
+    background-color: #24646d;
+}
+.page-tnid-29 hr {
+    border: none;
+    height: 1px;
+    color: #b9b49e;
+    background-color: #b9b49e;
+}
+.page-tnid-29 .field-type-image{
+    float: left;
+}
+.page-tnid-29 .field-type-file{
+    float: left;
+    margin: 33px 0 0 20px;
+}
+.page-newsletter-subscribe #content{
+    background-image: url("../images/top_newsletter_1.png");
+}
+.page-newsletter-subscribe #content .section{
+    background-color: #c6d12b;
+}
+.node-type-blog h1,
+.page-taxonomy h1,
+.page-blog h1{
+    color: #fbeecb;
+}
+.node-type-blog #content,
+.page-taxonomy #content,
+.page-blog #content{
+    background-image: url("../images/top_blog_1.png");
+}
+.node-type-blog #content .section,
+.page-taxonomy #content .section,
+.page-blog #content .section{
+    background-color: #c2543d;
+}
+.node-type-blog #content-right,
+.page-taxonomy #content-right,
+.page-blog #content-right{
+    background-image: url("../images/top_blog_2.png");
+    width: 280px;
+}
+.node-type-blog #content-right .section,
+.page-taxonomy #content-right .section,
+.page-blog #content-right .section{
+    background-color: #f58a9e;
+    color: #ffffff;
 }
 #sidebar-first {
     width: 200px;
 }
 #sidebar-second {
-    background-image: url("../images/top_masia_2.png");
-    background-position: 0 0;
-    background-repeat: no-repeat;
-    left: 632px;
+    width: 200px;
     position: absolute;
-    top: -10px;
-    width: 477px;
-}
-#sidebar-second .section {
-    color: #000000;
-    margin-left: 11px;
-    margin-top: 10px;
-    opacity: 0.9;
-    padding: 0px;
-    display: block;
-    overflow: hidden;
-}
-.quicktabs_main.quicktabs-style-navlist{
-    background: #a5a87b;
-    border: none;
-    width: 330px;
-}
-ul.quicktabs-tabs.quicktabs-style-navlist li.active{
-    background: none;
-    border: none;
-}
-ul.quicktabs-tabs.quicktabs-style-navlist li.active a{
-    background-position: -22px 0px;
-    text-decoration: none;
-}
-.widgets-element-horizontal{
-    margin-right: 5px;
-}
-.widgets-style-horizontal{
-    margin-bottom: 5px;
+    top: 5px;
+    /* right: 10px; */
+    left: 845px;
 }
 
-#user-login input.form-text{
-    width: 75%;
-}
-
+/* --------------- Quicktabs ------------ */
 .quicktabs-wrapper{
     display: block;
     overflow: hidden;
@@ -285,6 +393,19 @@ ul.quicktabs-tabs.quicktabs-style-navlist li.active a{
     padding: 0px;
     background-image: none;
 }
+.quicktabs_main.quicktabs-style-navlist{
+    background: #a5a87b;
+    border: none;
+    width: 330px;
+}
+ul.quicktabs-tabs.quicktabs-style-navlist li.active{
+    background: none;
+    border: none;
+}
+ul.quicktabs-tabs.quicktabs-style-navlist li.active a{
+    background-position: -22px 0px;
+    text-decoration: none;
+}
 ul.quicktabs-tabs.quicktabs-style-navlist li a{
     display: block;
     overflow: hidden;
@@ -297,6 +418,17 @@ ul.quicktabs-tabs.quicktabs-style-navlist li a{
     background-image: url(../images/pestanyes_huerto02.png);
     text-indent: 4000px;
 }
+
+/* --------------- TagClouds block ------------ */
+.block-tagclouds h2{
+    margin: 10px 0px;
+}
+.block-tagclouds span{
+    width: 100%;
+    display: block;
+    overflow: hidden;
+}
+/* --------------- Newsletter & nice messages ------------ */
 .jGrowl,
 #jGrowl .jGrowl-notification{
     color: #000000;
@@ -304,10 +436,7 @@ ul.quicktabs-tabs.quicktabs-style-navlist li a{
 .jGrowl-closer{
     color: #ffffff !important;
 }
-.form-item{
-    padding: 10px 0px;
-    margin: 0;
-}
+
 .nl-wrapper-hidden{
     display: none;
 }
@@ -319,11 +448,16 @@ ul.quicktabs-tabs.quicktabs-style-navlist li a{
     color: #ffffff;
     margin-bottom: 10px;
 }
-.quicktabs-tabpage .node-page ul.links{
-    display: none;
+
+/* --------------- Footer ------------ */
+
+#footer img{
+    position: fixed;
+    bottom: 0px;
 }
-.field-type-image img{
-    float: left;
-    padding: 7px;
-    background: #ffffff;
+#footer img.anton{
+    left: 310px;
+}
+#footer img.laura{
+    left: 580px;
 }
