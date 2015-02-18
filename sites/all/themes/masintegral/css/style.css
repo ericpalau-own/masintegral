@@ -176,7 +176,7 @@ a:hover{
 }
 .field-type-image img{
     float: left;
-    padding: 7px;
+    padding: 6px;
     background: #ffffff;
 }
 .field-name-field-tags .field-item{
@@ -194,13 +194,11 @@ a:hover{
     display: block;
     overflow: hidden;
 }
-
-.node-page .links.inline{
-    clear: both;
-    display: inline-block;
-    padding: 0px 10px;
+ul.links .node-readmore{
+    display: block;
+    overflow: hidden;
     margin: 0;
-    width: 100%;
+    padding: 5px 0 0 0;
 }
 #main-wrapper {
     position: relative;
@@ -222,22 +220,16 @@ a:hover{
     background: #bbbbbb;
 }
 #content-right {
-    background-image: url("../images/top_masia_2.png");
     background-position: 0 0;
     background-repeat: no-repeat;
     left: 632px;
     position: absolute;
     top: -10px;
-    width: 477px;
+    width: 386px;
 }
 #content-right .section {
+    margin: 10px 0 0 12px;
     color: #000000;
-    margin-left: 11px;
-    margin-top: 10px;
-    opacity: 0.9;
-    padding: 10px;
-    display: block;
-    overflow: hidden;
 }
 
 /* --------------- Specific content section ------------ */
@@ -258,8 +250,8 @@ a:hover{
 .page-tnid-4 #content-right {
     background-image: url("../images/top_masia_2.png");
 }
-.page-tnid-4 #content-right .section {
-    color: #000000;
+.page-tnid-4 .quicktabs_main{
+    background: #a5a87b;
 }
 .page-tnid-13 #content {
     width: 477px;
@@ -323,6 +315,13 @@ a:hover{
 .page-tnid-29 #content-right .section {
     color: #ffffff;
     background-color: #24646d;
+    color: #000000;
+    margin-left: 12px;
+    margin-top: 10px;
+    opacity: 0.9;
+    padding: 10px;
+    display: block;
+    overflow: hidden;
 }
 .page-tnid-29 hr {
     border: none;
@@ -386,14 +385,10 @@ a:hover{
     display: block;
     overflow: hidden;
     position: relative;
+    width: 100%;
 }
-.quicktabs-wrapper .item-list{
-    position: absolute;
-    right: 83px;
-    display: block;
-    width: 50px;
-    overflow: hidden;
-    float: right;
+.quicktabs-wrapper .quicktabs_main{
+    padding: 10px;
 }
 .quicktabs-tabs li{
     margin: 0px 0px 4px 0px;
@@ -401,9 +396,14 @@ a:hover{
     background-image: none;
 }
 .quicktabs_main.quicktabs-style-navlist{
-    background: #a5a87b;
     border: none;
-    width: 330px;
+    width: 88%;
+}
+ul.quicktabs-tabs.quicktabs-style-navlist{
+    width: 22px;
+}
+ul.quicktabs-tabs.quicktabs-style-navlist li{
+    margin: 0;
 }
 ul.quicktabs-tabs.quicktabs-style-navlist li.active{
     background: none;

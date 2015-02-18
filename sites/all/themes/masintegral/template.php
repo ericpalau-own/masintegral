@@ -37,6 +37,17 @@ function masintegral_preprocess_node(&$variables) {
 
 }
 
+function masintegral_qt_quicktabs($variables) {
+    $element = $variables['element'];
+    $output = '<div ' . drupal_attributes($element['#options']['attributes']) . '>';
+    $output .= drupal_render($element['container']);
+    $output .= drupal_render($element['tabs']);
+
+
+    $output .= '</div>';
+    return $output;
+}
+
 /**
  * Remove blog_usernames_blog from node links
  * @param $build
