@@ -228,17 +228,20 @@ ul.links .node-readmore{
     width: 386px;
 }
 #content-right .section {
-    margin: 10px 0 0 12px;
+    margin: 10px 0 0 11px;
     color: #000000;
+    opacity: 0.9;
 }
 
 /* --------------- Specific content section ------------ */
+/* --------------- Proyecto ------------ */
 .page-tnid-1 #content{
     background-image: url("../images/top_proyecto_1.png");
 }
 .page-tnid-1 #content .section{
     background-color: #ee1997;
 }
+/* --------------- Masia ------------ */
 .page-tnid-4 #content {
     background-image: url("../images/top_masia_1.png");
     width: 348px;
@@ -253,12 +256,63 @@ ul.links .node-readmore{
 .page-tnid-4 .quicktabs_main{
     background: #a5a87b;
 }
+#quicktabs-tab-ca_la_masia-0{
+    height: 70px;
+    background-image: url(../images/tabs/tab_ca_masia_0.png);
+}
+#quicktabs-tab-ca_la_masia-1{
+    height: 70px;
+    background-image: url(../images/tabs/tab_ca_masia_1.png);
+}
+#quicktabs-tab-ca_la_masia-2{
+    height: 70px;
+    background-image: url(../images/tabs/tab_ca_masia_2.png);
+}
+#quicktabs-tab-ca_la_masia-3{
+    height: 70px;
+    background-image: url(../images/tabs/tab_ca_masia_3.png);
+}
+#quicktabs-tab-es_la_masia-0{
+    height: 70px;
+    background-image: url(../images/tabs/tab_es_masia_0.png);
+}
+#quicktabs-tab-es_la_masia-1{
+    height: 70px;
+    background-image: url(../images/tabs/tab_es_masia_1.png);
+}
+#quicktabs-tab-es_la_masia-2{
+    height: 70px;
+    background-image: url(../images/tabs/tab_es_masia_2.png);
+}
+#quicktabs-tab-es_la_masia-3{
+    height: 70px;
+    background-image: url(../images/tabs/tab_es_masia_3.png);
+}
+#quicktabs-tab-en_la_masia-0{
+    height: 70px;
+    background-image: url(../images/tabs/tab_en_masia_0.png);
+}
+#quicktabs-tab-en_la_masia-1{
+    height: 70px;
+    background-image: url(../images/tabs/tab_en_masia_1.png);
+}
+#quicktabs-tab-en_la_masia-2{
+    height: 70px;
+    background-image: url(../images/tabs/tab_en_masia_2.png);
+}
+#quicktabs-tab-en_la_masia-3{
+    height: 70px;
+    background-image: url(../images/tabs/tab_en_masia_3.png);
+}
+
+/* --------------- Quienes somos ------------ */
 .page-tnid-13 #content {
     width: 477px;
 }
 .page-tnid-13 #content .section{
     color: #000000;
 }
+/* --------------- Sala gran ------------ */
 .page-tnid-20 h1 {
     color: #f8a849;
 }
@@ -269,6 +323,17 @@ ul.links .node-readmore{
     background-color: #d2743e;
     color: #000000;
 }
+.page-tnid-20 h2 {
+    color: #d2743e;
+}
+.page-tnid-20 #content-right {
+    background-image: url("../images/top_sala_gran_2.png");
+}
+.page-tnid-20 .quicktabs_main{
+    background: #f8a849;
+}
+
+/* --------------- Recessos ------------ */
 .page-tnid-21 #content {
     background-image: url("../images/top_recessos_1.png");
     width: 361px;
@@ -276,21 +341,210 @@ ul.links .node-readmore{
 .page-tnid-21 #content .section{
     background-color: #5fa5d8;
 }
+#quicktabs-tab-ca_retiros-0{
+    height: 70px;
+    background-image: url("../images/tabs/tab_ca_retiros_0.png");
+}
+#quicktabs-tab-ca_retiros-1{
+    height: 70px;
+    background-image: url("../images/tabs/tab_ca_retiros_1.png");
+}
+#quicktabs-tab-ca_retiros-2{
+    height: 70px;
+    background-image: url("../images/tabs/tab_ca_retiros_2.png");
+}
+#quicktabs-tab-ca_retiros-3{
+    height: 70px;
+    background-image: url("../images/tabs/tab_ca_retiros_3.png");
+}
+#quicktabs-tab-ca_retiros-4{
+    height: 70px;
+    background-image: url("../images/tabs/tab_ca_retiros_4.png");
+}
+#quicktabs-tab-ca_retiros-5{
+    height: 70px;
+    background-image: url("../images/tabs/tab_ca_retiros_5.png");
+}
+#quicktabs-tab-es_retiros-0{
+    height: 70px;
+    background-image: url("../images/tabs/tab_es_retiros_0.png");
+}
+#quicktabs-tab-es_retiros-1{
+    height: 70px;
+    background-image: url("../images/tabs/tab_es_retiros_1.png");
+}
+#quicktabs-tab-es_retiros-2{
+    height: 70px;
+    background-image: url("../images/tabs/tab_es_retiros_2.png");
+}
+#quicktabs-tab-es_retiros-3{
+    height: 70px;
+    background-image: url("../images/tabs/tab_es_retiros_3.png");
+}
+#quicktabs-tab-es_retiros-4{
+    height: 70px;
+    background-image: url("../images/tabs/tab_es_retiros_4.png");
+}
+#quicktabs-tab-es_retiros-5{
+    height: 70px;
+    background-image: url("../images/tabs/tab_es_retiros_5.png");
+}
+#quicktabs-tab-en_retiros-0{
+    height: 70px;
+    background-image: url("../images/tabs/tab_en_retiros_0.png");
+}
+#quicktabs-tab-en_retiros-1{
+    height: 70px;
+    background-image: url("../images/tabs/tab_en_retiros_1.png");
+}
+#quicktabs-tab-en_retiros-2{
+    height: 70px;
+    background-image: url("../images/tabs/tab_en_retiros_2.png");
+}
+#quicktabs-tab-en_retiros-3{
+    height: 70px;
+    background-image: url("../images/tabs/tab_en_retiros_3.png");
+}
+#quicktabs-tab-en_retiros-4{
+    height: 70px;
+    background-image: url("../images/tabs/tab_en_retiros_4.png");
+}
+#quicktabs-tab-en_retiros-5{
+    height: 70px;
+    background-image: url("../images/tabs/tab_en_retiros_5.png");
+}
+
+/* --------------- Huerto ------------ */
 .page-tnid-22 #content {
 }
 .page-tnid-22 #content .section{
 }
+#quicktabs-tab-ca_huerto-0{
+    height: 70px;
+    background-image: url(../images/tabs/tab_ca_huerto_0.png);
+}
+#quicktabs-tab-ca_huerto-1{
+    height: 70px;
+    background-image: url(../images/tabs/tab_ca_huerto_1.png);
+}
+#quicktabs-tab-ca_huerto-2{
+    height: 70px;
+    background-image: url(../images/tabs/tab_ca_huerto_2.png);
+}
+#quicktabs-tab-ca_huerto-3{
+    height: 70px;
+    background-image: url(../images/tabs/tab_ca_huerto_3.png);
+}
+#quicktabs-tab-es_huerto-0{
+    height: 70px;
+    background-image: url(../images/tabs/tab_es_huerto_0.png);
+}
+#quicktabs-tab-es_huerto-1{
+    height: 70px;
+    background-image: url(../images/tabs/tab_es_huerto_1.png);
+}
+#quicktabs-tab-es_huerto-2{
+    height: 70px;
+    background-image: url(../images/tabs/tab_es_huerto_2.png);
+}
+#quicktabs-tab-es_huerto-3{
+    height: 70px;
+    background-image: url(../images/tabs/tab_es_huerto_3.png);
+}
+#quicktabs-tab-en_huerto-0{
+    height: 70px;
+    background-image: url(../images/tabs/tab_en_huerto_0.png);
+}
+#quicktabs-tab-en_huerto-1{
+    height: 70px;
+    background-image: url(../images/tabs/tab_en_huerto_1.png);
+}
+#quicktabs-tab-en_huerto-2{
+    height: 70px;
+    background-image: url(../images/tabs/tab_en_huerto_2.png);
+}
+#quicktabs-tab-en_huerto-3{
+    height: 70px;
+    background-image: url(../images/tabs/tab_en_huerto_3.png);
+}
+
+
+/* --------------- Alimentacion ------------ */
 .page-tnid-23 h1{
     color: #b18eaf;
 }
 .page-tnid-23 #content {
     background-image: url("../images/top_alimentacio_1.png");
     width: 287px;
+    left: 200px;
 }
 .page-tnid-23 #content .section{
     background-color: #813689;
     margin-left: 10px;
 }
+.page-tnid-23 h2{
+    color: #7f2f84;
+}
+.page-tnid-23 #content-right {
+    background-image: url("../images/top_alimentacio_2.png");
+    left: 506px;
+}
+.page-tnid-23 .quicktabs_main{
+    background: #b89ab6;
+}
+.page-tnid-23 #sidebar-second{
+    left: 910px;
+}
+#quicktabs-tab-ca_alimentacio-0{
+    height: 70px;
+    background-image: url("../images/tabs/tab_ca_alimentacio_0.png");
+}
+#quicktabs-tab-ca_alimentacio-1{
+    height: 70px;
+    background-image: url("../images/tabs/tab_ca_alimentacio_1.png");
+}
+#quicktabs-tab-ca_alimentacio-2{
+    height: 70px;
+    background-image: url("../images/tabs/tab_ca_alimentacio_2.png");
+}
+#quicktabs-tab-ca_alimentacio-3{
+    height: 70px;
+    background-image: url("../images/tabs/tab_ca_alimentacio_3.png");
+}
+#quicktabs-tab-es_alimentacio-0{
+    height: 70px;
+    background-image: url("../images/tabs/tab_es_alimentacio_0.png");
+}
+#quicktabs-tab-es_alimentacio-1{
+    height: 70px;
+    background-image: url("../images/tabs/tab_es_alimentacio_1.png");
+}
+#quicktabs-tab-es_alimentacio-2{
+    height: 70px;
+    background-image: url("../images/tabs/tab_es_alimentacio_2.png");
+}
+#quicktabs-tab-es_alimentacio-3{
+    height: 70px;
+    background-image: url("../images/tabs/tab_es_alimentacio_3.png");
+}
+#quicktabs-tab-en_alimentacio-0{
+    height: 70px;
+    background-image: url("../images/tabs/tab_en_alimentacio_0.png");
+}
+#quicktabs-tab-en_alimentacio-1{
+    height: 70px;
+    background-image: url("../images/tabs/tab_en_alimentacio_1.png");
+}
+#quicktabs-tab-en_alimentacio-2{
+    height: 70px;
+    background-image: url("../images/tabs/tab_en_alimentacio_2.png");
+}
+#quicktabs-tab-en_alimentacio-3{
+    height: 70px;
+    background-image: url("../images/tabs/tab_en_alimentacio_3.png");
+}
+
+/* --------------- Contacto ------------ */
 .page-tnid-29 h1{
     color: #226168;
 }
@@ -336,12 +590,16 @@ ul.links .node-readmore{
     float: left;
     margin: 33px 0 0 20px;
 }
+
+/* --------------- Newsletter ------------ */
 .page-newsletter-subscribe #content{
     background-image: url("../images/top_newsletter_1.png");
 }
 .page-newsletter-subscribe #content .section{
     background-color: #c6d12b;
 }
+
+/* --------------- Blog, tags ------------ */
 .node-type-blog h1,
 .page-taxonomy h1,
 .page-blog h1{
@@ -368,7 +626,10 @@ ul.links .node-readmore{
 .page-blog #content-right .section{
     background-color: #f58a9e;
     color: #ffffff;
+    padding: 10px;
 }
+
+/* --------------- Sidebars ------------ */
 #sidebar-first {
     width: 200px;
 }
@@ -420,10 +681,8 @@ ul.quicktabs-tabs.quicktabs-style-navlist li a{
     background-repeat: no-repeat;
     background-position: 0px 0px;
     text-decoration: none;
-    height: 70px;
-    color: #ff0000;
-    background-image: url(../images/pestanyes_huerto02.png);
-    text-indent: 4000px;
+    color: #ff0000
+    /*text-indent: 4000px;*/
 }
 
 /* --------------- TagClouds block ------------ */
