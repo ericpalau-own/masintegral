@@ -36,3 +36,16 @@ function masintegral_preprocess_node(&$variables) {
     }
 
 }
+
+/**
+ * Remove blog_usernames_blog from node links
+ * @param $build
+ */
+/*
+function masintegral_node_view_alter(&$build) {
+    //var_dump($build['links']);die();
+    if (isset($build['links']['blog']['#links']['blog_usernames_blog'])) {
+        unset($build['links']['blog']['#links']['blog_usernames_blog']);
+    }
+}
+*/

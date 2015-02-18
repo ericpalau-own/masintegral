@@ -179,6 +179,13 @@ a:hover{
     padding: 7px;
     background: #ffffff;
 }
+.field-name-field-tags .field-item{
+    float: left;
+    margin-right: 5px;
+}
+.field-name-field-tags .field-item a{
+    text-decoration: underline;
+}
 .form-item{
     padding: 5px 0px;
     margin: 0 !important;
