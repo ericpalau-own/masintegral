@@ -152,6 +152,7 @@ h1.title{
     font-size: 18px;
     font-weight: bold;
     margin: 10px 0 0 0;
+    opacity: 0.9;
 }
 h2{
     padding: 0px;
@@ -159,7 +160,10 @@ h2{
     font-size: 16px;
     font-weight: bold;
     margin: 10px 0 0 0;
-
+    opacity: 0.9;
+}
+.node-blog h2{
+    margin: 10px 0;
 }
 a,
 a:visited,
@@ -169,6 +173,9 @@ a:active{
 }
 a:hover{
     text-decoration: underline;
+}
+.submitted{
+    margin-bottom: 10px;
 }
 .field-type-image {
     display: block;
@@ -602,31 +609,52 @@ ul.links .node-readmore{
 /* --------------- Blog, tags ------------ */
 .node-type-blog h1,
 .page-taxonomy h1,
+.page-comment h1,
 .page-blog h1{
     color: #fbeecb;
 }
 .node-type-blog #content,
 .page-taxonomy #content,
+.page-comment #content,
 .page-blog #content{
     background-image: url("../images/top_blog_1.png");
+    left: 200px;
+    width: 480px;
 }
 .node-type-blog #content .section,
 .page-taxonomy #content .section,
+.page-comment #content .section,
 .page-blog #content .section{
     background-color: #c2543d;
 }
 .node-type-blog #content-right,
 .page-taxonomy #content-right,
+.page-comment #content-right,
 .page-blog #content-right{
     background-image: url("../images/top_blog_2.png");
-    width: 280px;
+    width: 200px;
+    left: 700px;
 }
 .node-type-blog #content-right .section,
 .page-taxonomy #content-right .section,
+.page-comment #content-right .section,
 .page-blog #content-right .section{
     background-color: #f58a9e;
     color: #ffffff;
     padding: 10px;
+}
+.view-blog .item-list ul li{
+    padding: 0 0 10px 0;
+    margin: 0;
+    border-bottom: 1px solid #ffffff;
+}
+.field-name-field-tags{
+    margin-bottom: 10px;
+}
+
+/* --------------- Other pages ------------ */
+.page-user #content{
+    width: 500px;
 }
 
 /* --------------- Sidebars ------------ */
