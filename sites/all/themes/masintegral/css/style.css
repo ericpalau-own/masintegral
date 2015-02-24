@@ -22,6 +22,9 @@ body{
 .item-list ul{
     list-style: none;
 }
+img{
+    opacity: 1;
+}
 
 /* --------------- Logo ------------ */
 #logo{
@@ -216,7 +219,7 @@ ul.links .node-readmore{
     position: absolute;
     left: 260px;
     top: -10px;
-    width: 348px;
+    width: 355px;
 }
 #content .section{
     color: #ffffff;
@@ -251,7 +254,6 @@ ul.links .node-readmore{
 /* --------------- Masia ------------ */
 .page-tnid-4 #content {
     background-image: url("../images/top_masia_1.png");
-    width: 348px;
 }
 .page-tnid-4 #content .section{
     background-color: #0fb69a;
@@ -599,11 +601,24 @@ ul.links .node-readmore{
 }
 
 /* --------------- Newsletter ------------ */
+.page-newsletter-subscribe h1{
+    margin-bottom: 10px;
+}
 .page-newsletter-subscribe #content{
     background-image: url("../images/top_newsletter_1.png");
 }
 .page-newsletter-subscribe #content .section{
     background-color: #c6d12b;
+}
+#newsletter-manage-subscriptions-form #edit-email{
+    width: 90%;
+}
+#newsletter-manage-subscriptions-form fieldset{
+    border: 1px solid #ffffff;
+    -khtml-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
 }
 
 /* --------------- Blog, tags ------------ */
@@ -611,28 +626,49 @@ ul.links .node-readmore{
 .page-taxonomy h1,
 .page-comment h1,
 .page-blog h1{
-    color: #fbeecb;
+    /*color: #fbeecb;*/
+    color: #000000;
+    margin-bottom: 10px;
+}
+.node-type-blog #content a,
+.page-taxonomy #content a,
+.page-comment #content a,
+.page-blog #content a{
+    color: #000000;
 }
 .node-type-blog #content,
 .page-taxonomy #content,
 .page-comment #content,
 .page-blog #content{
-    background-image: url("../images/top_blog_1.png");
-    left: 200px;
-    width: 480px;
+    /*background-image: url("../images/top_blog_1.png");*/
+    background-image: url("../images/top_contacto_2.png");
+    left: 150px;
+    width: 525px;
 }
 .node-type-blog #content .section,
 .page-taxonomy #content .section,
 .page-comment #content .section,
 .page-blog #content .section{
-    background-color: #c2543d;
+    /*background-color: #c2543d;*/
+    background-color: #ffffff;
+    color:#000000;
+}
+.node-type-blog #content-right a,
+.page-taxonomy #content-right a,
+.page-comment #content-right a,
+.page-blog #content-right a,
+.node-type-blog #content-right span,
+.page-taxonomy #content-right span,
+.page-comment #content-right span,
+.page-blog #content-right span{
+    color: #fefbda;
 }
 .node-type-blog #content-right,
 .page-taxonomy #content-right,
 .page-comment #content-right,
 .page-blog #content-right{
     background-image: url("../images/top_blog_2.png");
-    width: 200px;
+    width: 191px;
     left: 700px;
 }
 .node-type-blog #content-right .section,
@@ -643,13 +679,63 @@ ul.links .node-readmore{
     color: #ffffff;
     padding: 10px;
 }
-.view-blog .item-list ul li{
+.page-blog .item-list ul li.views-row,
+.page-taxonomy .node-blog.node-teaser{
     padding: 0 0 10px 0;
     margin: 0;
-    border-bottom: 1px solid #ffffff;
+    /*border-bottom: 1px solid #ffffff;*/
+    border-bottom: 1px solid #24646d;
 }
 .field-name-field-tags{
+    display: block;
+    overflow: hidden;
     margin-bottom: 10px;
+}
+.node-blog .field-type-image img{
+    border: 1px solid #e5e5e5;
+    padding: 2px;
+    background: none;
+}
+.node-blog.node-teaser .field-name-field-main-image{
+    float: right;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.comment {
+    border: 1px outset #fbeecb;
+    display: inline-block;
+    padding: 6px;
+    -khtml-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+.comment span.new{
+    color: #ff0000;
+    float: right;
+    font-weight: bold;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+.comment h3{
+    margin: 0 0 5px 0;
+}
+.filter-wrapper{
+    border: none;
+    margin: 0;
+    padding: 0px;
+    font-style: italic;
+}
+.filter-wrapper .filter-guidelines,
+.filter-wrapper .filter-guidelines ul.tips{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.filter-wrapper .form-item,
+.filter-help{
+    display: none;
 }
 
 /* --------------- Other pages ------------ */

@@ -17,7 +17,7 @@ function masintegral_preprocess_html(&$variables) {
  */
 function masintegral_process_page(&$variables) {
 
-    if (isset($variables['node']->tnid) && $variables['node']->tnid != 0) {
+    if (isset($variables['node']->tnid) && $variables['node']->tnid != 0 && $variables['node']->type == 'page') {
         $variables['bg_url'] = $variables['base_path'].$variables['directory'].'/images/bg_'.$variables['node']->tnid.'.jpg';
     } else {
         $variables['bg_url'] = $variables['base_path'].$variables['directory'].'/images/bg_1.jpg';

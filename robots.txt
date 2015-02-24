@@ -58,3 +58,12 @@ Disallow: /?q=user/password/
 Disallow: /?q=user/register/
 Disallow: /?q=user/login/
 Disallow: /?q=user/logout/
+
+
+#Quicktabs trick for google and bing crowlers
+#@see http://2bits.com/bing/how-google-and-bing-crawlers-was-confused-quicktabs.html
+User-agent: *
+Crawl-delay: 10
+# No access for quicktabs in the URL
+Disallow: /*?quicktabs_*
+Disallow: /*&quicktabs_*
