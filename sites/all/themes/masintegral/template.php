@@ -19,6 +19,10 @@ function masintegral_process_page(&$variables) {
 
     if (isset($variables['node']->tnid) && $variables['node']->tnid != 0 && $variables['node']->type == 'page') {
         $variables['bg_url'] = $variables['base_path'].$variables['directory'].'/images/bg_'.$variables['node']->tnid.'.jpg';
+    } elseif (isset($variables['title'])) {
+        $variables['bg_url'] = $variables['base_path'].$variables['directory'].'/images/bg_'.strtolower(str_replace(' ','_',$variables['title'])).'.jpg';
+        //} elseif (isset($variables['title']) && strtolower($variables['title']) == 'blog') {
+    //    $variables['bg_url'] = $variables['base_path'].$variables['directory'].'/images/bg_blog.jpg';
     } else {
         $variables['bg_url'] = $variables['base_path'].$variables['directory'].'/images/bg_1.jpg';
     }

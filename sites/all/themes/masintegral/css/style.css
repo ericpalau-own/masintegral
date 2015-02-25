@@ -552,7 +552,9 @@ ul.links .node-readmore{
     height: 70px;
     background-image: url("../images/tabs/tab_en_alimentacio_3.png");
 }
-
+.node-full-tnid-82 h2{
+    margin-bottom: 10px;
+}
 /* --------------- Contacto ------------ */
 .page-tnid-29 h1{
     color: #226168;
