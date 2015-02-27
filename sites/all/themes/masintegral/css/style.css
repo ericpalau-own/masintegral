@@ -111,12 +111,20 @@ img{
     padding: 0;
     display: block;
     overflow: hidden;
+    width: 30px;
+    position: fixed;
+    left: 0;
+    top: 150px;
 }
 #secondary-menu-links li {
     list-style: none;
     margin: 0px;
+    padding: 0px;
     display: block;
     overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: top left;
+    margin-bottom: 20px;
 }
 #secondary-menu-links a {
     color: #000000;
@@ -128,6 +136,39 @@ img{
     background: #000000;
     text-decoration: none;
     color: #ffffff;
+}
+#secondary-menu-links li li.active{
+    background: none;
+    border: none;
+}
+#secondary-menu-links li.active a,
+#secondary-menu-links li a:hover{
+    background-position: -30px 0px;
+    text-decoration: none;
+    background-color: transparent;
+}
+#secondary-menu-links li a{
+    display: block;
+    overflow: hidden;
+    width: 29px;
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    text-decoration: none;
+    text-indent: -4000px;
+    height: 100%;
+}
+
+#secondary-menu-links li.menu-623 a{
+    background-image: url("../images/tab_ca_lateral_0.png");
+    height: 126px;
+}
+#secondary-menu-links li.menu-622 a{
+    background-image: url("../images/tab_ca_lateral_1.png");
+    height: 78px;
+}
+#secondary-menu-links li.menu-613 a{
+    background-image: url("../images/tab_ca_lateral_2.png");
+    height: 91px;
 }
 
 /* --------------- Header ------------ */
@@ -266,7 +307,7 @@ ul.links .node-readmore{
     background: #a5a87b;
 }
 #quicktabs-tab-ca_la_masia-0{
-    height: 70px;
+    height: 97px;
     background-image: url(../images/tabs/tab_ca_masia_0.png);
 }
 #quicktabs-tab-ca_la_masia-1{
@@ -274,7 +315,7 @@ ul.links .node-readmore{
     background-image: url(../images/tabs/tab_ca_masia_1.png);
 }
 #quicktabs-tab-ca_la_masia-2{
-    height: 70px;
+    height: 103px;
     background-image: url(../images/tabs/tab_ca_masia_2.png);
 }
 #quicktabs-tab-ca_la_masia-3{
@@ -282,7 +323,7 @@ ul.links .node-readmore{
     background-image: url(../images/tabs/tab_ca_masia_3.png);
 }
 #quicktabs-tab-es_la_masia-0{
-    height: 70px;
+    height: 97px;
     background-image: url(../images/tabs/tab_es_masia_0.png);
 }
 #quicktabs-tab-es_la_masia-1{
@@ -290,7 +331,7 @@ ul.links .node-readmore{
     background-image: url(../images/tabs/tab_es_masia_1.png);
 }
 #quicktabs-tab-es_la_masia-2{
-    height: 70px;
+    height: 103px;
     background-image: url(../images/tabs/tab_es_masia_2.png);
 }
 #quicktabs-tab-es_la_masia-3{
@@ -298,7 +339,7 @@ ul.links .node-readmore{
     background-image: url(../images/tabs/tab_es_masia_3.png);
 }
 #quicktabs-tab-en_la_masia-0{
-    height: 70px;
+    height: 97px;
     background-image: url(../images/tabs/tab_en_masia_0.png);
 }
 #quicktabs-tab-en_la_masia-1{
@@ -306,7 +347,7 @@ ul.links .node-readmore{
     background-image: url(../images/tabs/tab_en_masia_1.png);
 }
 #quicktabs-tab-en_la_masia-2{
-    height: 70px;
+    height: 103px;
     background-image: url(../images/tabs/tab_en_masia_2.png);
 }
 #quicktabs-tab-en_la_masia-3{
@@ -338,8 +379,59 @@ ul.links .node-readmore{
 .page-tnid-20 #content-right {
     background-image: url("../images/top_sala_gran_2.png");
 }
+.page-tnid-20 #content-right .quicktabs_main.quicktabs-style-navlist{
+    min-height: 371px;
+}
 .page-tnid-20 .quicktabs_main{
     background: #f8a849;
+}
+#quicktabs-tab-ca_sala_gran-0{
+    height: 104px;
+    background-image: url(../images/tabs/tab_ca_sales_0.png);
+}
+#quicktabs-tab-ca_sala_gran-1{
+    height: 77px;
+    background-image: url(../images/tabs/tab_ca_sales_1.png);
+}
+#quicktabs-tab-ca_sala_gran-2{
+    height: 104px;
+    background-image: url(../images/tabs/tab_ca_sales_2.png);
+}
+#quicktabs-tab-ca_sala_gran-3{
+    height: 104px;
+    background-image: url(../images/tabs/tab_ca_sales_3.png);
+}
+#quicktabs-tab-es_sala_gran-0{
+    height: 104px;
+    background-image: url(../images/tabs/tab_es_sales_0.png);
+}
+#quicktabs-tab-es_sala_gran-1{
+    height: 77px;
+    background-image: url(../images/tabs/tab_es_sales_1.png);
+}
+#quicktabs-tab-es_sala_gran-2{
+    height: 104px;
+    background-image: url(../images/tabs/tab_es_sales_2.png);
+}
+#quicktabs-tab-es_sala_gran-3{
+    height: 104px;
+    background-image: url(../images/tabs/tab_es_sales_3.png);
+}
+#quicktabs-tab-en_sala_gran-0{
+    height: 104px;
+    background-image: url(../images/tabs/tab_en_sales_0.png);
+}
+#quicktabs-tab-en_sala_gran-1{
+    height: 77px;
+    background-image: url(../images/tabs/tab_en_sales_1.png);
+}
+#quicktabs-tab-en_sala_gran-2{
+    height: 104px;
+    background-image: url(../images/tabs/tab_en_sales_2.png);
+}
+#quicktabs-tab-en_sala_gran-3{
+    height: 104px;
+    background-image: url(../images/tabs/tab_en_sales_3.png);
 }
 
 /* --------------- Recessos ------------ */
@@ -350,52 +442,61 @@ ul.links .node-readmore{
 .page-tnid-21 #content .section{
     background-color: #5fa5d8;
 }
+.page-tnid-21 #content-right{
+    background-image: url("../images/top_blog_2.png");
+}
+.page-tnid-21 #content-right .quicktabs_main.quicktabs-style-navlist{
+    min-height: 536px;
+}
+.page-tnid-21 .quicktabs_main{
+    background-color: #f58a9e;;
+}
 #quicktabs-tab-ca_retiros-0{
-    height: 70px;
+    height: 65px;
     background-image: url("../images/tabs/tab_ca_retiros_0.png");
 }
 #quicktabs-tab-ca_retiros-1{
-    height: 70px;
+    height: 118px;
     background-image: url("../images/tabs/tab_ca_retiros_1.png");
 }
 #quicktabs-tab-ca_retiros-2{
-    height: 70px;
+    height: 86px;
     background-image: url("../images/tabs/tab_ca_retiros_2.png");
 }
 #quicktabs-tab-ca_retiros-3{
-    height: 70px;
+    height: 65px;
     background-image: url("../images/tabs/tab_ca_retiros_3.png");
 }
 #quicktabs-tab-ca_retiros-4{
-    height: 70px;
+    height: 103px;
     background-image: url("../images/tabs/tab_ca_retiros_4.png");
 }
 #quicktabs-tab-ca_retiros-5{
-    height: 70px;
+    height: 118px;
     background-image: url("../images/tabs/tab_ca_retiros_5.png");
 }
 #quicktabs-tab-es_retiros-0{
-    height: 70px;
+    height: 65px;
     background-image: url("../images/tabs/tab_es_retiros_0.png");
 }
 #quicktabs-tab-es_retiros-1{
-    height: 70px;
+    height: 118px;
     background-image: url("../images/tabs/tab_es_retiros_1.png");
 }
 #quicktabs-tab-es_retiros-2{
-    height: 70px;
+    height: 86px;
     background-image: url("../images/tabs/tab_es_retiros_2.png");
 }
 #quicktabs-tab-es_retiros-3{
-    height: 70px;
+    height: 65px;
     background-image: url("../images/tabs/tab_es_retiros_3.png");
 }
 #quicktabs-tab-es_retiros-4{
-    height: 70px;
+    height: 103px;
     background-image: url("../images/tabs/tab_es_retiros_4.png");
 }
 #quicktabs-tab-es_retiros-5{
-    height: 70px;
+    height: 118px;
     background-image: url("../images/tabs/tab_es_retiros_5.png");
 }
 #quicktabs-tab-en_retiros-0{
@@ -427,53 +528,62 @@ ul.links .node-readmore{
 .page-tnid-22 #content {
 }
 .page-tnid-22 #content .section{
+    background-color: #896632;
+}
+.page-tnid-22 #content-right{
+}
+.page-tnid-22 #content-right .quicktabs_main.quicktabs-style-navlist{
+    min-height: 357px;
+}
+.page-tnid-22 .quicktabs_main{
+    background-color: #8b8d09;;
 }
 #quicktabs-tab-ca_huerto-0{
-    height: 70px;
+    height: 81px;
     background-image: url(../images/tabs/tab_ca_huerto_0.png);
 }
 #quicktabs-tab-ca_huerto-1{
-    height: 70px;
+    height: 94px;
     background-image: url(../images/tabs/tab_ca_huerto_1.png);
 }
 #quicktabs-tab-ca_huerto-2{
-    height: 70px;
+    height: 103px;
     background-image: url(../images/tabs/tab_ca_huerto_2.png);
 }
 #quicktabs-tab-ca_huerto-3{
-    height: 70px;
+    height: 79px;
     background-image: url(../images/tabs/tab_ca_huerto_3.png);
 }
 #quicktabs-tab-es_huerto-0{
-    height: 70px;
+    height: 81px;
     background-image: url(../images/tabs/tab_es_huerto_0.png);
 }
 #quicktabs-tab-es_huerto-1{
-    height: 70px;
+    height: 94px;
     background-image: url(../images/tabs/tab_es_huerto_1.png);
 }
 #quicktabs-tab-es_huerto-2{
-    height: 70px;
+    height: 103px;
     background-image: url(../images/tabs/tab_es_huerto_2.png);
 }
 #quicktabs-tab-es_huerto-3{
-    height: 70px;
+    height: 79px;
     background-image: url(../images/tabs/tab_es_huerto_3.png);
 }
 #quicktabs-tab-en_huerto-0{
-    height: 70px;
+    height: 81px;
     background-image: url(../images/tabs/tab_en_huerto_0.png);
 }
 #quicktabs-tab-en_huerto-1{
-    height: 70px;
+    height: 94px;
     background-image: url(../images/tabs/tab_en_huerto_1.png);
 }
 #quicktabs-tab-en_huerto-2{
-    height: 70px;
+    height: 103px;
     background-image: url(../images/tabs/tab_en_huerto_2.png);
 }
 #quicktabs-tab-en_huerto-3{
-    height: 70px;
+    height: 79px;
     background-image: url(../images/tabs/tab_en_huerto_3.png);
 }
 
@@ -498,6 +608,9 @@ ul.links .node-readmore{
     background-image: url("../images/top_alimentacio_2.png");
     left: 506px;
 }
+.page-tnid-23 #content-right .quicktabs_main.quicktabs-style-navlist{
+    min-height: 501px;
+}
 .page-tnid-23 .quicktabs_main{
     background: #b89ab6;
 }
@@ -505,52 +618,76 @@ ul.links .node-readmore{
     left: 910px;
 }
 #quicktabs-tab-ca_alimentacio-0{
-    height: 70px;
+    height: 79px;
     background-image: url("../images/tabs/tab_ca_alimentacio_0.png");
 }
 #quicktabs-tab-ca_alimentacio-1{
-    height: 70px;
+    height: 95px;
     background-image: url("../images/tabs/tab_ca_alimentacio_1.png");
 }
 #quicktabs-tab-ca_alimentacio-2{
-    height: 70px;
+    height: 82px;
     background-image: url("../images/tabs/tab_ca_alimentacio_2.png");
 }
 #quicktabs-tab-ca_alimentacio-3{
-    height: 70px;
+    height: 82px;
     background-image: url("../images/tabs/tab_ca_alimentacio_3.png");
 }
+#quicktabs-tab-ca_alimentacio-4{
+    height: 86px;
+    background-image: url("../images/tabs/tab_ca_alimentacio_4.png");
+}
+#quicktabs-tab-ca_alimentacio-5{
+    height: 95px;
+    background-image: url("../images/tabs/tab_ca_alimentacio_5.png");
+}
 #quicktabs-tab-es_alimentacio-0{
-    height: 70px;
+    height: 79px;
     background-image: url("../images/tabs/tab_es_alimentacio_0.png");
 }
 #quicktabs-tab-es_alimentacio-1{
-    height: 70px;
+    height: 95px;
     background-image: url("../images/tabs/tab_es_alimentacio_1.png");
 }
 #quicktabs-tab-es_alimentacio-2{
-    height: 70px;
+    height: 82px;
     background-image: url("../images/tabs/tab_es_alimentacio_2.png");
 }
 #quicktabs-tab-es_alimentacio-3{
-    height: 70px;
+    height: 82px;
     background-image: url("../images/tabs/tab_es_alimentacio_3.png");
 }
+#quicktabs-tab-es_alimentacio-4{
+    height: 86px;
+    background-image: url("../images/tabs/tab_es_alimentacio_4.png");
+}
+#quicktabs-tab-es_alimentacio-5{
+    height: 95px;
+    background-image: url("../images/tabs/tab_es_alimentacio_5.png");
+}
 #quicktabs-tab-en_alimentacio-0{
-    height: 70px;
+    height: 79px;
     background-image: url("../images/tabs/tab_en_alimentacio_0.png");
 }
 #quicktabs-tab-en_alimentacio-1{
-    height: 70px;
+    height: 95px;
     background-image: url("../images/tabs/tab_en_alimentacio_1.png");
 }
 #quicktabs-tab-en_alimentacio-2{
-    height: 70px;
+    height: 82px;
     background-image: url("../images/tabs/tab_en_alimentacio_2.png");
 }
 #quicktabs-tab-en_alimentacio-3{
-    height: 70px;
+    height: 82px;
     background-image: url("../images/tabs/tab_en_alimentacio_3.png");
+}
+#quicktabs-tab-en_alimentacio-4{
+    height: 86px;
+    background-image: url("../images/tabs/tab_en_alimentacio_4.png");
+}
+#quicktabs-tab-en_alimentacio-5{
+    height: 95px;
+    background-image: url("../images/tabs/tab_en_alimentacio_5.png");
 }
 .node-full-tnid-82 h2{
     margin-bottom: 10px;
@@ -786,7 +923,8 @@ ul.quicktabs-tabs.quicktabs-style-navlist li.active{
     background: none;
     border: none;
 }
-ul.quicktabs-tabs.quicktabs-style-navlist li.active a{
+ul.quicktabs-tabs.quicktabs-style-navlist li.active a,
+ul.quicktabs-tabs.quicktabs-style-navlist li a:hover{
     background-position: -22px 0px;
     text-decoration: none;
 }
@@ -797,8 +935,7 @@ ul.quicktabs-tabs.quicktabs-style-navlist li a{
     background-repeat: no-repeat;
     background-position: 0px 0px;
     text-decoration: none;
-    color: #ff0000
-    /*text-indent: 4000px;*/
+    text-indent: 4000px;
 }
 
 /* --------------- TagClouds block ------------ */
