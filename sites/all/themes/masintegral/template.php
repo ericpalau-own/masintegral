@@ -4,7 +4,7 @@
  * Add body classes if certain regions have content.
  */
 function masintegral_preprocess_html(&$variables) {
-
+    // Add body class related to tnid attribute
     $node_loaded = menu_get_object();
     if (isset($node_loaded)) {
         $variables['classes_array'][] = 'page-tnid-'.$node_loaded->tnid;
@@ -18,29 +18,40 @@ function masintegral_preprocess_html(&$variables) {
 function masintegral_process_page(&$variables) {
 
     if (isset($variables['node']->tnid) && $variables['node']->tnid != 0 && $variables['node']->type == 'page') {
+        // Background for all pages
         $variables['bg_url'] = $variables['base_path'].$variables['directory'].'/images/bg_'.$variables['node']->tnid.'.jpg';
+    } elseif (arg(0) == 'blog' || arg(0) == 'comment' || arg(0) == 'taxonomy' || (isset($variables['node']->type) && $variables['node']->type == 'blog')) {
+        // Background for all blog url's
+        $variables['bg_url'] = $variables['base_path'].$variables['directory'].'/images/bg_blog.jpg';
     } elseif (isset($variables['title'])) {
+        // Background for system pages
         $variables['bg_url'] = $variables['base_path'].$variables['directory'].'/images/bg_'.strtolower(str_replace(' ','_',$variables['title'])).'.jpg';
-        //} elseif (isset($variables['title']) && strtolower($variables['title']) == 'blog') {
-    //    $variables['bg_url'] = $variables['base_path'].$variables['directory'].'/images/bg_blog.jpg';
     } else {
+        // Otherwise Default background
         $variables['bg_url'] = $variables['base_path'].$variables['directory'].'/images/bg_1.jpg';
     }
+
+    // Disable node tabs
     $variables['tabs_enabled'] = false;
-    //var_dump($variables);die();
 }
 
 /**
  * Override or insert variables into the page template.
  */
 function masintegral_preprocess_node(&$variables) {
-
+    // Add node content class related to tnid attribute
     if ($variables['view_mode'] == 'full' && isset($variables['node']->tnid)) {
         $variables['classes_array'][] = 'node-full-tnid-'.$variables['node']->tnid;
     }
 
 }
 
+/**
+ * Reorganize quicktabs rendered html to print container before tabs
+ *
+ * @param $variables
+ * @return string
+ */
 function masintegral_qt_quicktabs($variables) {
     $element = $variables['element'];
     $output = '<div ' . drupal_attributes($element['#options']['attributes']) . '>';
