@@ -170,6 +170,22 @@ img{
     background-image: url("../images/tab_ca_lateral_2.png");
     height: 91px;
 }
+#secondary-menu-links li.menu-437 a{
+    background-image: url("../images/tab_es_lateral_0.png");
+    height: 126px;
+}
+#secondary-menu-links li.menu-624 a{
+    background-image: url("../images/tab_es_lateral_1.png");
+    height: 78px;
+}
+#secondary-menu-links li.menu-673 a{
+    background-image: url("../images/tab_en_lateral_0.png");
+    height: 126px;
+}
+#secondary-menu-links li.menu-672 a{
+    background-image: url("../images/tab_en_lateral_1.png");
+    height: 78px;
+}
 
 /* --------------- Header ------------ */
 .region-header{
