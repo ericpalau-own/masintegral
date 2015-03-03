@@ -23,7 +23,7 @@ function masintegral_process_page(&$variables) {
     } elseif (arg(0) == 'blog' || arg(0) == 'comment' || arg(0) == 'taxonomy' || (isset($variables['node']->type) && $variables['node']->type == 'blog')) {
         // Background for all blog url's
         $variables['bg_url'] = $variables['base_path'].$variables['directory'].'/images/bg_blog.jpg';
-    } elseif (isset($variables['title'])) {
+    } elseif (isset($variables['title']) && strtolower(str_replace(' ','_',$variables['title'])) == 'newsletter') {
         // Background for system pages
         $variables['bg_url'] = $variables['base_path'].$variables['directory'].'/images/bg_'.strtolower(str_replace(' ','_',$variables['title'])).'.jpg';
     } else {
@@ -67,11 +67,17 @@ function masintegral_qt_quicktabs($variables) {
  * Remove blog_usernames_blog from node links
  * @param $build
  */
-/*
+
 function masintegral_node_view_alter(&$build) {
+    /*
     //var_dump($build['links']);die();
     if (isset($build['links']['blog']['#links']['blog_usernames_blog'])) {
         unset($build['links']['blog']['#links']['blog_usernames_blog']);
     }
+    */
+
+    $node = $build['#node'];
+    if (!empty($node->nid)) {
+        $build['#contextual_links']['node'] = array('node', array($node->nid));
+    }
 }
-*/

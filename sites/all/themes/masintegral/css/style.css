@@ -25,6 +25,9 @@ body{
 img{
     opacity: 1;
 }
+a.language-link img{
+    display: none;
+}
 
 /* --------------- Logo ------------ */
 #logo{
@@ -70,7 +73,7 @@ img{
     text-decoration: none;
     color: #ffffff;
 }
-
+/* Proyecto + default */
 #main-menu-links a:hover,
 #main-menu-links a:focus,
 #main-menu-links a.active,
@@ -79,29 +82,74 @@ img{
 .page-tnid-1 #main-menu-links a.active{
     background: url("../images/color_menu01.png") repeat-x left bottom #ee1997;
 }
+/* Masia */
 .page-tnid-4 #main-menu-links a:hover,
 .page-tnid-4 #main-menu-links a:focus,
 .page-tnid-4 #main-menu-links a.active{
-    background: url("../images/color_menu02.png") repeat-x left bottom #ee1997;
+    background: url("../images/color_menu02.png") repeat-x left bottom #0fb69a;
 }
+/* Sales */
 .page-tnid-20 #main-menu-links a:hover,
 .page-tnid-20 #main-menu-links a:focus,
 .page-tnid-20 #main-menu-links a.active{
-    background: url("../images/color_menu03.png") repeat-x left bottom #ee1997;
+    background: url("../images/color_menu03.png") repeat-x left bottom #d2743e;
 }
+/* Retiros y cursos */
 .page-tnid-21 #main-menu-links a:hover,
 .page-tnid-21 #main-menu-links a:focus,
 .page-tnid-21 #main-menu-links a.active{
-    background: url("../images/color_menu05.png") repeat-x left bottom #ee1997;
+    background: url("../images/color_menu04.png") repeat-x left bottom #933529;
 }
+/* Huerto */
 .page-tnid-22 #main-menu-links a:hover,
 .page-tnid-22 #main-menu-links a:focus,
 .page-tnid-22 #main-menu-links a.active{
+    background: url("../images/color_menu05.png") repeat-x left bottom #896632;
 }
+/* Alimentación */
 .page-tnid-23 #main-menu-links a:hover,
 .page-tnid-23 #main-menu-links a:focus,
 .page-tnid-23 #main-menu-links a.active{
-    background: url("../images/color_menu04.png") repeat-x left bottom #ee1997;
+    background: url("../images/color_menu06.png") repeat-x left bottom #813689;
+}
+/*
+ Blog + posts + comments
+  .node-type-blog h1,
+.page-taxonomy h1,
+.page-comment h1,
+*/
+.page-blog #main-menu-links a:hover,
+.page-blog #main-menu-links a:focus,
+.page-blog #main-menu-links a.active,
+.node-type-blog #main-menu-links a:hover,
+.node-type-blog #main-menu-links a:focus,
+.node-type-blog #main-menu-links a.active,
+.page-taxonomy #main-menu-links a:hover,
+.page-taxonomy #main-menu-links a:focus,
+.page-taxonomy #main-menu-links a.active,
+.page-comment #main-menu-links a:hover,
+.page-comment #main-menu-links a:focus,
+.page-comment #main-menu-links a.active{
+    background: url("../images/color_menu07.png") repeat-x left bottom #fefbda;
+}
+/* Quienes somos */
+.page-tnid-13 #main-menu-links a:hover,
+.page-tnid-13 #main-menu-links a:focus,
+.page-tnid-13 #main-menu-links a.active{
+    background: url("../images/color_menu08.png") repeat-x left bottom #569fd3;
+}
+/* Contacto */
+.page-tnid-29 #main-menu-links a:hover,
+.page-tnid-29 #main-menu-links a:focus,
+.page-tnid-29 #main-menu-links a.active{
+    background: url("../images/color_menu09.png") repeat-x left bottom #fefbda;
+    color: #6e6e70;
+}
+/* Newsletter */
+.page-newsletter-subscribe #main-menu-links a:hover,
+.page-newsletter-subscribe #main-menu-links a:focus,
+.page-newsletter-subscribe #main-menu-links a.active{
+    background: url("../images/color_menu10.png") repeat-x left bottom #c6d12b;
 }
 
 
@@ -212,7 +260,7 @@ h1.title{
     font-size: 18px;
     font-weight: bold;
     margin: 10px 0 0 0;
-    opacity: 0.9;
+    opacity: 0.99;
 }
 h2{
     padding: 0px;
@@ -220,7 +268,7 @@ h2{
     font-size: 16px;
     font-weight: bold;
     margin: 10px 0 0 0;
-    opacity: 0.9;
+    opacity: 0.99;
 }
 .node-blog h2{
     margin: 10px 0;
@@ -274,7 +322,7 @@ ul.links .node-readmore{
     background-position: 0 0;
     background-repeat: no-repeat;
     position: absolute;
-    left: 260px;
+    left: 200px;
     top: -10px;
     width: 355px;
 }
@@ -289,7 +337,7 @@ ul.links .node-readmore{
 #content-right {
     background-position: 0 0;
     background-repeat: no-repeat;
-    left: 632px;
+    left: 572px;
     position: absolute;
     top: -10px;
     width: 386px;
@@ -304,6 +352,7 @@ ul.links .node-readmore{
 /* --------------- Proyecto ------------ */
 .page-tnid-1 #content{
     background-image: url("../images/top_proyecto_1.png");
+    left: 260px;
 }
 .page-tnid-1 #content .section{
     background-color: #ee1997;
@@ -371,19 +420,12 @@ ul.links .node-readmore{
     background-image: url(../images/tabs/tab_en_masia_3.png);
 }
 
-/* --------------- Quienes somos ------------ */
-.page-tnid-13 #content {
-    width: 477px;
-}
-.page-tnid-13 #content .section{
-    color: #000000;
-}
-/* --------------- Sala gran ------------ */
+/* --------------- Sales ------------ */
 .page-tnid-20 h1 {
     color: #f8a849;
 }
 .page-tnid-20 #content {
-    background-image: url("../images/top_sala_gran_1.png");
+    background-image: url("../images/top_sales_1.png");
 }
 .page-tnid-20 #content .section{
     background-color: #d2743e;
@@ -393,7 +435,9 @@ ul.links .node-readmore{
     color: #d2743e;
 }
 .page-tnid-20 #content-right {
-    background-image: url("../images/top_sala_gran_2.png");
+    background-image: url("../images/top_sales_2.png");
+    background-position: 3px 0;
+    background-size: 358px 10px;
 }
 .page-tnid-20 #content-right .quicktabs_main.quicktabs-style-navlist{
     min-height: 371px;
@@ -456,10 +500,12 @@ ul.links .node-readmore{
     width: 361px;
 }
 .page-tnid-21 #content .section{
-    background-color: #5fa5d8;
+    background-color: #933529;
 }
 .page-tnid-21 #content-right{
-    background-image: url("../images/top_blog_2.png");
+    background-image: url("../images/top_recessos_2.png");
+    background-position: 3px 0;
+    background-size: 358px 10px;
 }
 .page-tnid-21 #content-right .quicktabs_main.quicktabs-style-navlist{
     min-height: 536px;
@@ -542,11 +588,15 @@ ul.links .node-readmore{
 
 /* --------------- Huerto ------------ */
 .page-tnid-22 #content {
+    background-image: url("../images/top_hort_1.png");
 }
 .page-tnid-22 #content .section{
     background-color: #896632;
 }
 .page-tnid-22 #content-right{
+    background-image: url("../images/top_hort_2.png");
+    background-position: 2px 0;
+    background-size: 359px 10px;
 }
 .page-tnid-22 #content-right .quicktabs_main.quicktabs-style-navlist{
     min-height: 357px;
@@ -708,73 +758,7 @@ ul.links .node-readmore{
 .node-full-tnid-82 h2{
     margin-bottom: 10px;
 }
-/* --------------- Contacto ------------ */
-.page-tnid-29 h1{
-    color: #226168;
-}
-.page-tnid-29 #content {
-    background-image: url("../images/top_contacto_2.png");
-    width: 330px;
-}
-.page-tnid-29 #content .section{
-    background-color: #fefbda;
-    color:#000000;
-}
-.page-tnid-29 #content .section a{
-    color:#000000;
-}
-.page-tnid-29 #content-right h2{
-    color: #eeefd0;
-}
-.page-tnid-29 #content-right {
-    background-image: url("../images/top_contacto_1.png");
-    width: 191px;
-}
-.page-tnid-29 #content-right .section {
-    color: #ffffff;
-    background-color: #24646d;
-    color: #000000;
-    margin-left: 12px;
-    margin-top: 10px;
-    opacity: 0.9;
-    padding: 10px;
-    display: block;
-    overflow: hidden;
-}
-.page-tnid-29 hr {
-    border: none;
-    height: 1px;
-    color: #b9b49e;
-    background-color: #b9b49e;
-}
-.page-tnid-29 .field-type-image{
-    float: left;
-}
-.page-tnid-29 .field-type-file{
-    float: left;
-    margin: 33px 0 0 20px;
-}
 
-/* --------------- Newsletter ------------ */
-.page-newsletter-subscribe h1{
-    margin-bottom: 10px;
-}
-.page-newsletter-subscribe #content{
-    background-image: url("../images/top_newsletter_1.png");
-}
-.page-newsletter-subscribe #content .section{
-    background-color: #c6d12b;
-}
-#newsletter-manage-subscriptions-form #edit-email{
-    width: 90%;
-}
-#newsletter-manage-subscriptions-form fieldset{
-    border: 1px solid #ffffff;
-    -khtml-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
-}
 
 /* --------------- Blog, tags ------------ */
 .node-type-blog h1,
@@ -795,19 +779,21 @@ ul.links .node-readmore{
 .page-taxonomy #content,
 .page-comment #content,
 .page-blog #content{
-    /*background-image: url("../images/top_blog_1.png");*/
-    background-image: url("../images/top_contacto_2.png");
-    left: 150px;
-    width: 525px;
+    background-image: url("../images/top_blog_1.png");
+    left: 120px;
+    width: 562px;
+    background-position: -2px 0;
+    background-size: 564px auto;
 }
 .node-type-blog #content .section,
 .page-taxonomy #content .section,
 .page-comment #content .section,
 .page-blog #content .section{
     /*background-color: #c2543d;*/
-    background-color: #ffffff;
+    background-color: #BFC0C3;
     color:#000000;
 }
+/*
 .node-type-blog #content-right a,
 .page-taxonomy #content-right a,
 .page-comment #content-right a,
@@ -818,11 +804,13 @@ ul.links .node-readmore{
 .page-blog #content-right span{
     color: #fefbda;
 }
+*/
 .node-type-blog #content-right,
 .page-taxonomy #content-right,
 .page-comment #content-right,
 .page-blog #content-right{
     background-image: url("../images/top_blog_2.png");
+    background-position: -1px 0;
     width: 191px;
     left: 700px;
 }
@@ -891,6 +879,86 @@ ul.links .node-readmore{
 .filter-wrapper .form-item,
 .filter-help{
     display: none;
+}
+
+/* --------------- Quienes somos ------------ */
+.page-tnid-13 #content {
+    background-image: url("../images/top_qui_som_1.png");
+    width: 477px;
+}
+.page-tnid-13 #content .section{
+    color: #ffffff;
+    background-color: #569fd3;
+}
+
+/* --------------- Contacto ------------ */
+.page-tnid-29 h1{
+    color: #226168;
+}
+.page-tnid-29 #content {
+    background-image: url("../images/top_contacto_1.png");
+    width: 330px;
+}
+.page-tnid-29 #content .section{
+    background-color: #fefbda;
+    color:#000000;
+}
+.page-tnid-29 #content .section a{
+    color:#000000;
+}
+.page-tnid-29 #content-right h2{
+    color: #eeefd0;
+}
+.page-tnid-29 #content-right {
+    background-image: url("../images/top_contacto_2.png");
+    width: 191px;
+}
+.page-tnid-29 #content-right .section {
+    color: #ffffff;
+    background-color: #24646d;
+    color: #000000;
+    margin-left: 12px;
+    margin-top: 10px;
+    opacity: 0.9;
+    padding: 10px;
+    display: block;
+    overflow: hidden;
+}
+.page-tnid-29 hr {
+    border: none;
+    height: 1px;
+    color: #b9b49e;
+    background-color: #b9b49e;
+}
+.page-tnid-29 .field-type-image{
+    float: left;
+}
+.page-tnid-29 .field-type-file{
+    float: left;
+    margin: 33px 0 0 20px;
+}
+
+/* --------------- Newsletter ------------ */
+.page-newsletter-subscribe h1{
+    margin-bottom: 10px;
+}
+.page-newsletter-subscribe #content{
+    background-image: url("../images/top_newsletter_1.png");
+    left: 260px;
+    width: 465px;
+}
+.page-newsletter-subscribe #content .section{
+    background-color: #c6d12b;
+}
+#newsletter-manage-subscriptions-form #edit-email{
+    width: 90%;
+}
+#newsletter-manage-subscriptions-form fieldset{
+    border: 1px solid #ffffff;
+    -khtml-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
 }
 
 /* --------------- Other pages ------------ */
