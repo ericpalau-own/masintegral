@@ -31,8 +31,12 @@ function masintegral_process_page(&$variables) {
         $variables['bg_url'] = $variables['base_path'].$variables['directory'].'/images/bg_1.jpg';
     }
 
-    // Disable node tabs
-    $variables['tabs_enabled'] = false;
+    // Disable node tabs. Only enable for user page
+    if (arg(0) == 'user' && user_is_logged_in()) {
+        $variables['tabs_enabled'] = true;
+    } else {
+        $variables['tabs_enabled'] = false;
+    }
 }
 
 /**

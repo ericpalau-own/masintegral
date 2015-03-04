@@ -72,11 +72,9 @@ a.language-link img{
 #main-menu-links a.active{
     text-decoration: none;
     color: #ffffff;
+    background: url("../images/color_menu08.png") repeat-x left bottom #569fd3;
 }
 /* Proyecto + default */
-#main-menu-links a:hover,
-#main-menu-links a:focus,
-#main-menu-links a.active,
 .page-tnid-1 #main-menu-links a:hover,
 .page-tnid-1 #main-menu-links a:focus,
 .page-tnid-1 #main-menu-links a.active{
@@ -319,12 +317,12 @@ ul.links .node-readmore{
     position: relative;
 }
 #content{
-    background-position: 0 0;
     background-repeat: no-repeat;
     position: absolute;
     left: 200px;
     top: -10px;
     width: 355px;
+    background-image: url("../images/top_default_1.png");
 }
 #content .section{
     color: #ffffff;
@@ -332,7 +330,7 @@ ul.links .node-readmore{
     margin-top: 10px;
     opacity: 0.9;
     padding: 5px 10px;
-    background: #bbbbbb;
+    background: #5FA5D8;
 }
 #content-right {
     background-position: 0 0;
@@ -368,8 +366,11 @@ ul.links .node-readmore{
 .page-tnid-4 #content-right {
     background-image: url("../images/top_masia_2.png");
 }
+.page-tnid-4 #content-right .quicktabs_main.quicktabs-style-navlist{
+    min-height: 322px;
+}
 .page-tnid-4 .quicktabs_main{
-    background: #a5a87b;
+background: #a5a87b;
 }
 #quicktabs-tab-ca_la_masia-0{
     height: 97px;
@@ -562,27 +563,27 @@ ul.links .node-readmore{
     background-image: url("../images/tabs/tab_es_retiros_5.png");
 }
 #quicktabs-tab-en_retiros-0{
-    height: 70px;
+    height: 65px;
     background-image: url("../images/tabs/tab_en_retiros_0.png");
 }
 #quicktabs-tab-en_retiros-1{
-    height: 70px;
+    height: 118px;
     background-image: url("../images/tabs/tab_en_retiros_1.png");
 }
 #quicktabs-tab-en_retiros-2{
-    height: 70px;
+    height: 86px;
     background-image: url("../images/tabs/tab_en_retiros_2.png");
 }
 #quicktabs-tab-en_retiros-3{
-    height: 70px;
+    height: 65px;
     background-image: url("../images/tabs/tab_en_retiros_3.png");
 }
 #quicktabs-tab-en_retiros-4{
-    height: 70px;
+    height: 103px;
     background-image: url("../images/tabs/tab_en_retiros_4.png");
 }
 #quicktabs-tab-en_retiros-5{
-    height: 70px;
+    height: 118px;
     background-image: url("../images/tabs/tab_en_retiros_5.png");
 }
 
@@ -964,6 +965,11 @@ ul.links .node-readmore{
 /* --------------- Other pages ------------ */
 .page-user #content{
     width: 500px;
+    background-position: -3px 0px;
+    background-size: 503px 10px;
+}
+.page-user input.form-text {
+    width: 75%;
 }
 
 /* --------------- Sidebars ------------ */
