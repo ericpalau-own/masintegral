@@ -73,10 +73,6 @@
  */
 ?>
 
-<?php if(isset($bg_url)): ?>
-    <img id="background" class="fullBg" alt="" src="<?php print $bg_url?>">
-<?php endif; ?>
-
 <div id="page-wrapper"><div id="page">
 
     <div id="header" class="<?php print $secondary_menu ? 'with-secondary-menu': 'without-secondary-menu'; ?>"><div class="section clearfix">
@@ -197,3 +193,7 @@
             </div></div> <!-- /.section, /#footer-wrapper -->
 
     </div></div> <!-- /#page, /#page-wrapper -->
+
+<?php if(isset($bg_url)): ?>
+    <img id="background" class="fullBg" alt="bg" title="bg" src="<?php print $bg_url?>" />
+<?php endif; ?>
