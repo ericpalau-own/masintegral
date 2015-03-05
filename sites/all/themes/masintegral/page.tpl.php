@@ -74,7 +74,7 @@
 ?>
 
 <?php if(isset($bg_url)): ?>
-    <div><img id="background" class="fullBg" src="<?php print $bg_url?>" alt="bg" title="bg" /></div>
+    <div><img id="background" class="fullBg" src="<?php print $bg_url?>" alt="<?php print $title; ?>" title="<?php print $title; ?>" /></div>
 <?php endif; ?>
 
 <div id="page-wrapper"><div id="page">
