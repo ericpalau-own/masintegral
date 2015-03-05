@@ -269,7 +269,7 @@ h2{
     font-family: Georgia, Verdana;
     font-size: 16px;
     font-weight: bold;
-    margin: 10px 0 0 0;
+    margin: 10px 0 10px 0;
     opacity: 0.99;
 }
 .node-blog h2{
@@ -760,9 +760,6 @@ background: #a5a87b;
     height: 95px;
     background-image: url("../images/tabs/tab_en_alimentacio_5.png");
 }
-.node-full-tnid-82 h2{
-    margin-bottom: 10px;
-}
 
 
 /* --------------- Blog, tags ------------ */
@@ -967,7 +964,8 @@ background: #a5a87b;
 }
 
 /* --------------- Other pages ------------ */
-.page-user #content{
+.page-user #content,
+.page-search #content{
     width: 500px;
     background-position: -3px 0px;
     background-size: 503px 10px;
