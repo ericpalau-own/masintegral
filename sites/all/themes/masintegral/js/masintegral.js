@@ -3,9 +3,14 @@
         attach: function (context, settings) {
             $(window).load(function() {
                 $("#background").fullBg();
+                $("#background").show();
+                $("#content, #content-right, #footer, #sidebar-second").delay(1000).fadeIn( "3000", function() {
+                    // Animation complete
+                });
             });
         }
     };
+    /*
     Drupal.behaviors.masintegralnewsletter = {
         attach: function (contect, settings) {
             $(window).load(function() {
@@ -22,4 +27,5 @@
             })
         }
     }
+    */
 })(jQuery);

@@ -18,6 +18,7 @@ body{
     overflow: hidden;
     position: fixed;
     top: 0;
+    display: none;
 }
 .item-list ul{
     list-style: none;
@@ -26,6 +27,9 @@ img{
     opacity: 1;
 }
 a.language-link img{
+    display: none;
+}
+#content, #content-right, #sidebar-second, #footer{
     display: none;
 }
 
@@ -1065,8 +1069,8 @@ ul.quicktabs-tabs.quicktabs-style-navlist li a{
     bottom: 0px;
 }
 #footer img.anton{
-    left: 310px;
+    left: 450px;
 }
 #footer img.laura{
-    left: 580px;
+    left: 250px;
 }
