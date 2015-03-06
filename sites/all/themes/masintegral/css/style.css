@@ -132,19 +132,19 @@ a.language-link img{
 .page-comment #main-menu-links a:hover,
 .page-comment #main-menu-links a:focus,
 .page-comment #main-menu-links a.active{
-    background: url("../images/color_menu07.png") repeat-x left bottom #fefbda;
+    background: url("../images/color_menu07.png") repeat-x left bottom #EFE3CE;
 }
 /* Quienes somos */
 .page-tnid-13 #main-menu-links a:hover,
 .page-tnid-13 #main-menu-links a:focus,
 .page-tnid-13 #main-menu-links a.active{
-    background: url("../images/color_menu08.png") repeat-x left bottom #569fd3;
+    background: url("../images/color_menu08.png") repeat-x left bottom #74C8BA;
 }
 /* Contacto */
 .page-tnid-29 #main-menu-links a:hover,
 .page-tnid-29 #main-menu-links a:focus,
 .page-tnid-29 #main-menu-links a.active{
-    background: url("../images/color_menu09.png") repeat-x left bottom #fefbda;
+    background: url("../images/color_menu09.png") repeat-x left bottom #FBFFD3;
     color: #6e6e70;
 }
 /* Newsletter */
@@ -791,8 +791,8 @@ background: #a5a87b;
 .page-taxonomy #content .section,
 .page-comment #content .section,
 .page-blog #content .section{
-    /*background-color: #c2543d;*/
-    background-color: #BFC0C3;
+    /*background-color: #BFC0C3;*/
+    background-color: #EFE3CE;
     color:#000000;
 }
 /*
@@ -890,7 +890,8 @@ background: #a5a87b;
 }
 .page-tnid-13 #content .section{
     color: #ffffff;
-    background-color: #569fd3;
+    background-color: #74C8BA;
+    /*background-color: #569fd3;*/
 }
 
 /* --------------- Contacto ------------ */
@@ -902,14 +903,14 @@ background: #a5a87b;
     width: 330px;
 }
 .page-tnid-29 #content .section{
-    background-color: #fefbda;
+    background-color: #FBFFD3;
     color:#000000;
 }
 .page-tnid-29 #content .section a{
     color:#000000;
 }
 .page-tnid-29 #content-right h2{
-    color: #eeefd0;
+    color: #FBFFD3;
 }
 .page-tnid-29 #content-right {
     background-image: url("../images/top_contacto_2.png");
