@@ -35,6 +35,10 @@ a.language-link img{
 #content, #content-right, #sidebar-second, #footer{
     display: none;
 }
+.field-name-body img{
+    background: none repeat scroll 0 0 #ffffff;
+    padding: 6px;
+}
 
 /* --------------- Logo ------------ */
 #logo{
