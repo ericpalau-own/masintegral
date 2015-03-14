@@ -73,12 +73,12 @@
  */
 ?>
 
-<?php if(isset($bg_url)): ?>
-    <div><img id="background" class="fullBg" src="<?php print $bg_url?>" alt="<?php print $title; ?>" title="<?php print $title; ?>" /></div>
-<?php endif; ?>
+
 
 <div id="page-wrapper"><div id="page">
-
+        <?php if(isset($bg_url)): ?>
+            <div><img id="background" class="fullBg" src="<?php print $bg_url?>" alt="<?php print $title; ?>" title="<?php print $title; ?>" /></div>
+        <?php endif; ?>
     <div id="header" class="<?php print $secondary_menu ? 'with-secondary-menu': 'without-secondary-menu'; ?>"><div class="section clearfix">
 
             <?php if ($logo): ?>

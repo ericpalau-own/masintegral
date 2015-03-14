@@ -29,9 +29,11 @@ img{
 a.language-link{
     font-size: 11px;
 }
+/*
 a.language-link img{
     display: none;
 }
+*/
 #content, #content-right, #sidebar-second, #footer{
     display: none;
 }
@@ -56,6 +58,8 @@ a.language-link img{
 }
 #main-menu {
     float: left;
+    display: block;
+    overflow: hidden;
 }
 #main-menu-links {
     margin: 0;
@@ -64,7 +68,7 @@ a.language-link img{
 #main-menu-links li {
     float: left; /* LTR */
     list-style: none;
-    padding: 0 15px 0 0;
+    padding: 0 10px 0 0;
     margin: 0px;
     display: block;
     overflow: hidden;
@@ -172,6 +176,7 @@ a.language-link img{
     position: fixed;
     left: 0;
     top: 150px;
+    height: 100%;
 }
 #secondary-menu-links li {
     list-style: none;
@@ -246,8 +251,12 @@ a.language-link img{
 
 /* --------------- Header ------------ */
 .region-header{
-    float: right;
-    line-height: 25px;
+    /*float: right;*/
+    position: absolute;
+    right: 0;
+    line-height: 18px;
+    display: block;
+    overflow: hidden;
 }
 #block-locale-language ul li{
     float: left;
@@ -326,6 +335,7 @@ ul.links .node-readmore{
 }
 #main-wrapper {
     position: relative;
+    min-height: 500px;
 }
 #content{
     background-repeat: no-repeat;
